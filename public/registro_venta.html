@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Ventas</title>
+    <link rel="stylesheet" href="css/registro_venta.css">
+</head>
+<body>
+<div class="container">
+    <h2>Formulario de Registro de Ventas</h2>
+    
+    <form id="ventaForm">
+        <input type="hidden" name="id_venta" id="id_venta">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre del Producto" required>
+        <input type="number" step="0.01" name="precio_unitario" id="precio_unitario" placeholder="Precio Unitario" required>
+        <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+        <button type="submit" id="submitBtn">Registrar Venta</button>
+    </form>
+
+    <h3>Ventas Registradas</h3>
+    <table id="tablaVentas">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Fecha y Hora</th>
+                <th>Acciones</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las ventas se insertarán dinámicamente con JS -->
+        </tbody>
+    </table>
+</div>
+
+<script src="js/registro_venta.js"></script>
+</body>
+</html>

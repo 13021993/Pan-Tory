@@ -1,0 +1,103 @@
+# 🧁 Pan-Tory - Sistema Web para la Panadería Coquito
+
+**Pan-Tory** es un sistema de gestión integral diseñado para la panadería **Coquito**, que permite controlar los procesos operativos como ventas, compras, proveedores, movimientos de caja, inventario, y más. Su objetivo es facilitar la administración diaria del negocio con interfaces claras y funcionales.
+
+---
+
+## 📁 Estructura del Proyecto
+
+```bash
+/public
+│
+├── /css                   # Hojas de estilo (style.css, contraseña.css, etc.)
+├── /js                    # Scripts JS (validaciones, lógica de ventas, seguridad)
+├── README.md              # Descripción del proyecto
+├── ajustes.html           # Configuración general del sistema
+├── caja.html              # Administración de caja
+├── catalogo.html          # Catálogo de productos
+├── cierre_sesion.html     # Cierre de sesión
+├── contacto.html          # Página de contacto
+├── contraseña.html        # Recuperación de contraseña
+├── dashboard.html         # Vista principal de administración
+├── detalle_venta.html     # Detalles individuales de cada venta
+├── historial_ventas.html  # Historial completo de ventas
+├── inventario.html        # Control e inventario de productos
+├── login.html             # Inicio de sesión
+├── movimientos_caja.html  # Registro de movimientos de caja
+├── registrar_proveedor.html # Registro de nuevos proveedores
+├── registrar_venta.html   # Realizar ventas
+├── registro_compras.html  # Registro de compras realizadas
+├── registro.html          # Registro de nuevos empleados
+├── reporte_especifico.html # Reporte filtrado por criterios específicos
+├── reporte_general.html   # Reporte general del sistema
+├── resumen_ventas.html    # Resumen total de ventas
+└── validacion2fa.html     # Validación de doble factor
+Funcionalidades principales
+Autenticación segura con validación en dos pasos
+
+Dashboard administrativo con indicadores clave
+
+Registro y control de ventas, compras e inventario
+
+Administración de caja (movimientos y cierre)
+
+Generación de reportes generales y específicos
+
+Gestión de proveedores y empleados
+
+Recuperación de contraseña y cierre de sesión
+
+🛠 Tecnologías utilizadas
+HTML5 – Estructura semántica de las interfaces
+
+CSS3 – Diseño visual personalizado (Flexbox/Grid)
+
+JavaScript – Validaciones, lógica de formularios, cálculos dinámicos
+
+MySQL – Almacenamiento de datos (estructura relacional)
+
+Visual Studio Code – Entorno de desarrollo principal
+
+📌 Instrucciones para uso local
+Clona este repositorio:
+
+bash
+Copiar
+Editar
+git clone https://github.com/tu-usuario/pan-tory.git
+Abre la carpeta en Visual Studio Code:
+
+bash
+Copiar
+Editar
+cd pan-tory
+Ejecuta los archivos HTML directamente en tu navegador, o configura un servidor local si usas backend.
+
+Configura la base de datos en MySQL Workbench con el script correspondiente.
+
+🔐 Accesos por defecto
+Administrador
+
+Usuario: admin
+
+Contraseña: admin123
+
+Empleado
+
+Usuario: empleado
+
+Contraseña: pan2024
+
+Estos datos pueden modificarse directamente desde la base de datos.
+
+👨‍💻 Equipo de desarrollo
+
+María – Diseño y creación del modelo de base de datos
+
+Janer – Relaciones y estructura física en SQL
+
+Sergio – Inserciones, optimización e índices
+
+📄 Licencia
+Este sistema fue desarrollado con fines educativos para el programa SENA.
+Uso restringido a prácticas formativas y demostrativas.

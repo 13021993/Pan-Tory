@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Panadería Coquito</title>
+    <link rel="stylesheet" href="css/inventario.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"> Pan-Tory</div>
+    </header>
+    <div class="barra-superior">
+        <h1 class="titulo-app">Inventario </h1>
+      </div>
+
+<div class="formulario-contenedor">
+    <h2>🍞 Agregar Producto</h2>
+    <form id="productoForm">
+        <label for="nombre">id_producto:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="categoria">Categoría:</label>
+      <input type="text" id="categoria" name="categoria" required>
+
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" step="0.01" min="0" required>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" name="cantidad" min="0" required>
+      
+      <label for="fecha">Fecha:</label>
+<input type="text" id="fecha" name="fecha" readonly>
+<label for="hora">Hora:</label>
+<input type="text" id="hora" name="hora" readonly>
+
+
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</body>
+</html>
+
+    </form>
+  </div>
+  
+<div class="export-buttons">
+  <button>Exportar PDF</button>
+  <button>Exportar Excel</button>
+  <button>Imprimir</button>
+</div>
+
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script>
+    <script src="js/inventario.js"></script>
+</body>
+</html>
+

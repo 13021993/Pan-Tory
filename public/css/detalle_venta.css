@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .barra-superior {
+    background-color: #3498db;
+    color: white;
+    padding: 3px 15px;
+
+    text-align: center;
+  }
+  
+  .contenedor-detalle {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .total-final {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+  }
+  

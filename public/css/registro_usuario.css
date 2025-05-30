@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Barra superior */
+.barra-superior {
+    background-color: #007BFF;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Formulario 95% centrado */
+form {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Inputs y selects */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=password], select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Botón enviar */
+input[type=submit] {
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #0069D9;
+}
+
+/* Tabla */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Enlaces de acción */
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkred;
+}

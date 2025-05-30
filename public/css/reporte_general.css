@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .barra-superior {
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .titulo-app {
+    margin: 0;
+  }
+  
+  .contenedor {
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  

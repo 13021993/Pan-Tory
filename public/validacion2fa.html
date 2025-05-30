@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación  - Panadería Coquito</title>
+    <link rel="stylesheet" href="css/validacion2fa.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Pan-Tory</div>
+        <div class="menu-options">
+        <div id="message-area"></div>
+        </div>
+      </header>
+      
+
+    <!-- Contenido principal -->
+    <main class="two-factor-form">
+        <h1>Validación</h1>
+        <p>Ingresa el código enviado a tu correo electrónico.</p>
+        <form id="2fa-form" method="post">
+            <div class="form-group">
+                <label for="code">Código de Verificación</label>
+                <input type="text" id="code" name="code" placeholder="Ingresa el código" required>
+            </div>
+            <button type="submit" class="btn-create">Verificar Código</button>
+            <a href="#" class="link">¿No recibiste el código?</a>
+        </form>
+    </main>
+
+
+    <!-- Script de funcionalidades -->
+    <script src="js/validacion2fa.js"></script>
+</body>
+</html>

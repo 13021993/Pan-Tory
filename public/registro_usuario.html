@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Usuarios - Pan-Tory</title>
+    <link rel="stylesheet" href="css/registro_usuario.css">
+</head>
+<body>
+    <div class="barra-superior">
+        Pan-Tory
+    </div>
+
+    <h2>Registrar Nuevo Usuario</h2>
+    
+    <form id="formulario-usuario">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Apellido:</label>
+        <input type="text" name="apellido" required>
+
+        <label>Correo:</label>
+        <input type="email" name="correo" required>
+
+        <label>Contraseña:</label>
+        <input type="password" name="contrasena" required>
+
+        <label>Teléfono:</label>
+        <input type="text" name="telefono">
+
+        <label>Rol:</label>
+        <select name="rol" required>
+            <option value="">Seleccione un rol</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Empleado">Empleado</option>
+        </select>
+
+        <input type="submit" value="Agregar Usuario">
+    </form>
+
+    <h3>Usuarios Registrados</h3>
+    <table>
+        <tr>
+            <th>ID</th><th>Nombre</th><th>Apellido</th><th>Correo</th><th>Teléfono</th><th>Rol</th><th>Acciones</th>
+        </tr>
+        
+        </tr>
+    </table>
+
+    <script src="js/registro_usuario.js"></script>
+</body>
+</html>

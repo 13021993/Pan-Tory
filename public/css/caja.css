@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .barra-superior {
+    background-color: #007bff;      /* Azul brillante */
+    color: white;                   /* Texto en blanco */
+    height: 60px;                   /* Franja más angosta */
+    display: flex;                  /* Centrado del contenido */
+    align-items: center;           /* Centrar verticalmente */
+    justify-content: center;       /* Centrar horizontalmente */
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 2px solid #005bbf;
+  }
+  
+  .titulo-app {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;                  /* Letras blancas */
+  }
+  
+  
+  .titulo {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .icono-usuario {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  
+  .contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-abrir {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-abrir:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-cerrar {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+  }
+  
+  #estado-caja {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .cerrada {
+    color: #cc0000;
+  }
+  

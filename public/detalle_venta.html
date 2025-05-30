@@ -1,0 +1,41 @@
+<!-- detalle_venta.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Venta</title>
+  <link rel="stylesheet" href="css/detalle_venta.css">
+</head>
+<body>
+
+  <div class="barra-superior">
+    <h1>Detalle de Venta - Pan-Tory</h1>
+  </div>
+
+  <div class="contenedor-detalle">
+    <h2>Productos vendidos</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID Producto</th>
+          <th>Nombre</th>
+          <th>Precio Unitario</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="detalleTabla">
+        <!-- JS insertará los productos aquí -->
+      </tbody>
+    </table>
+
+    <div class="total-final">
+      <strong>Total de la Venta:</strong> <span id="totalVenta"></span>
+    </div>
+  </div>
+
+  <script src="js/detalle_venta.js"></script>
+</body>
+</html>

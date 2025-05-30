@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reporte Específico de Ventas - Pan-Tory</title>
+  <link rel="stylesheet" href="css/reporte_especifico.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+
+  <div class="barra-superior">
+    <h1 class="titulo-app">Pan-Tory</h1>
+  </div>
+
+  <div class="contenedor">
+    <h2>📄 Reporte Específico de Ventas</h2>
+
+    <form id="form-reporte-especifico">
+      <label for="fecha_inicio">Fecha Inicio:</label>
+      <input type="date" id="fecha_inicio" required>
+
+      <label for="fecha_fin">Fecha Fin:</label>
+      <input type="date" id="fecha_fin" required>
+
+      <label for="empleado">Empleado:</label>
+      <input type="text" id="empleado" placeholder="(Opcional)">
+
+      <button type="submit">Generar Reporte</button>
+    </form>
+
+    <h2>📋 Resultados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Empleado</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-reportes-especificos"></tbody>
+    </table>
+
+    <h2>📊 Análisis de Ventas</h2>
+    <canvas id="grafica-reportes-especificos" height="100"></canvas>
+
+    <div class="botones-exportacion">
+      <button id="btn-pdf">Exportar PDF</button>
+      <button id="btn-excel">Exportar Excel</button>
+    </div>
+  </div>
+
+  <script src="js/reporte_especifico.js"></script>
+</body>
+</html>

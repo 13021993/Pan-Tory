@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffefe;
+  }
+  
+
+  /* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffefe
+  }
+  
+  header {
+    background-color: #2196f3;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  .filtros {
+    padding: 20px;
+    text-align: center;
+    background-color: wheat
+  }
+  
+  .filtros label,
+  .filtros select,
+  .filtros input {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tabla-contenedor {
+    padding: 20px;
+  }
+  
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #0d47a1;
+    color: white;
+  }
+  

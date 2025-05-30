@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Barra superior con título */
+  .navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 10.rem;
+  }
+  
+  /* Título de la pantalla */
+  .barra-superior {
+    background-color: #e9ecef;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
+  .titulo-app {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Contenedor del formulario */
+  .contenedor {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Botones */
+  button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  button[type="reset"]:hover {
+    background-color: #5a6268;
+  }
+  

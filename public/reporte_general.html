@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Reportes - Pan-Tory</title>
+  <link rel="stylesheet" href="css/reporte_general.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="barra-superior">
+    <h1 class="titulo-app">Pan-Tory</h1>
+  </div>
+
+  <div class="contenedor">
+    <h2>📄 Generar Reporte</h2>
+    <form id="form-reporte">
+      <label for="tipo">Tipo de Reporte:</label>
+      <select id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="Ventas">Ventas</option>
+        <option value="Inventario">Inventario</option>
+        <option value="Caja">Caja</option>
+      </select>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" rows="3" required></textarea>
+
+      <button type="submit">Generar</button>
+    </form>
+
+    <h2>📋 Reportes Generados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Descripción</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-reportes"></tbody>
+    </table>
+
+    <h2>📊 Análisis de Reportes</h2>
+    <canvas id="grafica-reportes" height="100"></canvas>
+  </div>
+
+  <script src="js/reporte_general.js"></script>
+</body>
+</html>

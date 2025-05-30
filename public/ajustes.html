@@ -1,0 +1,95 @@
+<!-- ajustes.html -->
+<!DOCTYPE html>
+<html lang="español">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajustes | Pan-Tory</title>
+  <link rel="stylesheet" href="css/ajustes.css">
+
+</head>
+<body>
+  <header>
+    <h1>🔧 Ajustes - Pan-Tory</h1>
+    <nav>
+      <button onclick="volverMenu()">🏠 Menú Principal</button>
+      <button onclick="cerrarSesion()">🔓 Cerrar Sesión</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Gestión de Usuarios -->
+    <section class="panel">
+      <h2>👥 Gestión de Usuarios</h2>
+      <button onclick="abrirFormularioUsuario()">➕ Agregar Usuario</button>
+      <table id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Usuarios cargados dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Seguridad del Sistema -->
+    <section class="panel">
+      <h2>🔐 Seguridad del Sistema</h2>
+      <form id="formSeguridad">
+        <label>Contraseña Actual: <input type="password" required /></label>
+        <label>Nueva Contraseña: <input type="password" required /></label>
+        <label>Número de Teléfono: <input type="tel" /></label>
+        <label>Correo de Recuperación: <input type="email" /></label>
+      </form>
+    </section>
+
+    <!-- Otras configuraciones -->
+    <section class="panel">
+      <h2>⚙️ Otras Configuraciones</h2>
+      <form>
+        <label>Logo del Sistema: <input type="file" /></label>
+        <label>Nombre del Negocio: <input type="text" /></label>
+        <label>Color del Tema: <input type="color" /></label>
+      </form>
+    </section>
+
+    <!-- Acciones generales -->
+    <div class="acciones">
+      <button onclick="guardarCambios()">💾 Guardar Cambios</button>
+      <button onclick="cancelarCambios()">❌ Cancelar</button>
+    </div>
+  </main>
+
+  <!-- Formulario Emergente -->
+  <div id="modalUsuario" class="modal oculto">
+    <div class="modal-contenido">
+      <span onclick="cerrarFormularioUsuario()" class="cerrar">&times;</span>
+      <h3>Agregar Usuario</h3>
+      <form id="formUsuario">
+        <label>Nombre: <input type="text" required /></label>
+        <label>Rol:
+          <select required>
+            <option>Empleado</option>
+            <option>Cajero</option>
+            <option>Panadero</option>
+            <option>Administrador</option>
+          </select>
+        </label>
+        <label>Teléfono: <input type="tel" required /></label>
+        <label>Correo: <input type="email" required /></label>
+        <label>Contraseña: <input type="password" required /></label>
+        <label>Confirmar Contraseña: <input type="password" required /></label>
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="public/js/ajustes.js"></script>
+</body>
+</html>

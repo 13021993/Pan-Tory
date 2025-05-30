@@ -1,0 +1,66 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffd4; 
+    font-family: Arial, sans-serif;
+    color: #010000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  .login-form {
+    background-color: #ffffffd5;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ffffffd5(240, 234, 234, 0.89);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Título */
+  .login-form h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 25px;
+  }
+  
+  /* Grupos de formulario */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #010000;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Botón */
+  .btn-create {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff(255, 252, 252);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-create:hover {
+    background-color: #0056b3;
+  }
+  
