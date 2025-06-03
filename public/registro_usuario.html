@@ -13,6 +13,9 @@
     <h2>Registrar Nuevo Usuario</h2>
     
     <form id="formulario-usuario">
+        <label>Número de Documento:</label>
+        <input type="text" name="documento" required>
+
         <label>Nombre:</label>
         <input type="text" name="nombre" required>
 
@@ -24,6 +27,9 @@
 
         <label>Contraseña:</label>
         <input type="password" name="contrasena" required>
+
+        <label>Confirmar Contraseña:</label>
+        <input type="password" name="confirmar_contrasena" required>
 
         <label>Teléfono:</label>
         <input type="text" name="telefono">
@@ -40,11 +46,22 @@
 
     <h3>Usuarios Registrados</h3>
     <table>
-        <tr>
-            <th>ID</th><th>Nombre</th><th>Apellido</th><th>Correo</th><th>Teléfono</th><th>Rol</th><th>Acciones</th>
-        </tr>
-        
-        </tr>
+        <thead>
+            <tr>
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-usuarios">
+           <form method="POST" action="public/registro_usuario.php">
+           <!-- Aquí se cargarán los usuarios -->
+           </form>
+        </tbody>
     </table>
 
     <script src="js/registro_usuario.js"></script>
